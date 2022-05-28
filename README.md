@@ -31,7 +31,7 @@
 ### 💻 Results
 
 
-<img src="https://media3.giphy.com/media/m9jjh6LjBGi5vWLNW1/giphy.gif?cid=790b7611adf9d01ce921b4b251ef4e203584c5c51ce16dfd&rid=giphy.gif&ct=s" alt="imagem" width="50%">
+<img src="https://www.encartale.com.br/smart/modulos/produto/imagens/grande/placa-inicio-de-obra_564-17.jpg" alt="imagem" width="50%">
 
 <br><br>
 
