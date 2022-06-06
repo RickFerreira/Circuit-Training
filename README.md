@@ -30,8 +30,8 @@
 
 ### 💻 Results
 
-![video](https://github.com/RickFerreira/Circuit-Training/blob/main/video.gif)
-<img src="https://www.encartale.com.br/smart/modulos/produto/imagens/grande/placa-inicio-de-obra_564-17.jpg" alt="imagem" width="50%">
+
+<img src="https://github.com/RickFerreira/Circuit-Training/blob/main/video.gif" alt="imagem" width="100%">
 
 <br><br>
 
