@@ -1,21 +1,21 @@
 .relogioNumero {
-    background-color: #5D677C;
-    box-shadow: 2px 2px 4px #2B2B2B inset;
-    height: 3.6rem;
-    width: 3rem;
-    padding: 8px 4px;
-    border-radius: 10px;
-  
-    @media screen and (min-width:1280px) {
-      height: 10.8rem;
-      width: 9rem;
-    }
+  background-color: #292929;
+  box-shadow: 4px 4px 4px #7c7c7c inset;
+  height: 3.6rem;
+  width: 3rem;
+  padding: 16px 4px;
+  border-radius: 50px;
+
+  @media screen and (min-width:1280px) {
+    height: 10.8rem;
+    width: 9rem;
   }
-  
-  .relogioDivisao {
-    height: 4.2rem;
-  
-    @media screen and (min-width:1280px) {
-      height: 12.6rem;
-    }
+}
+
+.relogioDivisao {
+  height: 4.2rem;
+
+  @media screen and (min-width:1280px) {
+    height: 12.6rem;
   }
+}

@@ -2,10 +2,27 @@
   display:flex;
   flex-direction: column;
   grid-area: novo-exercicio;
-  background-color: #7687A1;
+  background-color: #2D3A56;
   border-radius: 10px;
   box-shadow: 2px 4px 4px #0000009F;
   padding: 12px;
+
+  button {
+    background-color: #29ABE3;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px #0000009F;
+    color: #272626;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 16px;
+    width: 250px;
+
+    &:active {
+      background-color: #7CA6B7;
+      box-shadow: 2px 2px 4px #0000009F inset;
+      cursor: auto;
+      }
+  }
 
   .inputContainer {
     display: flex;
@@ -24,7 +41,7 @@
       box-sizing: border-box;
       border: unset;
       border-radius: 5px;
-      background-color: #5D677C;
+      background-color: #252b38;
       box-shadow: 0px 2px 4px #2D2B2B9F inset;
       
       &::placeholder {

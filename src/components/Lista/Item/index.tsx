@@ -1,10 +1,20 @@
-import style from '../Lista.module.scss';
+import { IExercicio } from '../../../types/Exercicio'
+import styles from './Exercicio.module.scss'
 
-export default function Item ({exercicio, tempo}: { exercicio: string, tempo: string}) {
-    return (
-        <li className={style.item}>
-            <h3> {exercicio} </h3>
-            <span> {tempo} </span>
-        </li>
-    )
+interface IItem {
+  item: IExercicio,
+  index: number,
+  abreItem: (item: IExercicio, index: number) => void
+}
+
+export const Item = ({ item, index, abreItem }: IItem) => {
+  return (
+    <li
+      className={`${styles.item} ${item.selecionado ? styles.itemSelecionado : ""} ${item.completado ? styles.itemCompletado : ""}`}
+      onClick={() => !item.completado && abreItem(item, index)}>
+      <h3>{item.exercicio}</h3>
+      <span>{item.tempo}</span>
+      {item.completado && <span className={styles.concluido} aria-label="icone de concluido"></span>}
+    </li>
+  )
 }

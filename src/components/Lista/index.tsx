@@ -1,33 +1,26 @@
-import React, { useState } from 'react';
-import Item from './Item';
-import style from './Lista.module.scss'
+import {Item} from './Item/index'
+import { IExercicio } from '../../types/Exercicio'
+import styles from './Lista.module.scss'
 
-function Lista() {
-  const [exercicios, setExercicios] = useState([{
-    exercicio: 'Polichinelo',
-      tempo: '00:01:00'
-  }, {
-    exercicio: 'Burpe',
-      tempo: '00:00:30'
-  }, {
-    exercicio: 'Prancha',
-      tempo: '00:01:20'
-  }]);
-  return (
-    <aside className={style.listaExercicios}>
-      <h2 onClick={() => {
-        setExercicios([...exercicios, { exercicio: "Bicicleta", tempo: "00:05:00"}])
-      }}> Lista de exercícios de hoje </h2>
-      <ul>
-        {exercicios.map((item, index) => (
-          <Item 
-            key={index}
-            {...item}//chama tudo do objeto
-          />
-        ))}
-      </ul>
-    </aside>
-  );
+interface ILista {
+  lista: IExercicio[],
+  abreItem: (item: IExercicio, index: number) => void
 }
 
-export default Lista;
+export const Lista = ({ lista, abreItem }: ILista) => {
+  return (
+    <aside className={styles.listaExercicios}>
+      <h2>Circuito de hoje</h2>
+      <ul>
+        {lista.map((item, index) => (
+            <Item 
+              key={item.id}
+              item={item} 
+              index={index} 
+              abreItem={abreItem}
+            />
+          ))}
+      </ul>
+    </aside>
+  )
+}

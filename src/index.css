@@ -42,7 +42,6 @@ table {
 	border-spacing: 0;
 }
 
-
 input {
 	font-family: inherit;
 	font-size: inherit;
@@ -66,7 +65,7 @@ body {
 	justify-content: center;
 	font-family: 'Manjari', sans-serif;
 	color: #F0F0F0;
-	background-color: #4C4C4C;
+	background-color: #2D3A56;
 	height: 100%;
 	width: 100%;
 	padding: 16px;
@@ -87,9 +86,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 4px;
-	background: #888;
+	background: #29ABE3;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	background: #29ABE3;
 }
