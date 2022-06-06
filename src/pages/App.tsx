@@ -5,6 +5,9 @@ import { Cronometro } from '../components/Cronometro/index'
 import { IExercicio } from '../types/Exercicio'
 import { timeToSeconds } from '../common/utils/date'
 import styles from "./App.module.scss"
+import Footer from '../components/layout/Footer'
+import Home from '../components/layout/Home'
+
 
 export const App = () => {
   const [lista, setLista] = useState<IExercicio[]>([]);
@@ -35,10 +38,15 @@ export const App = () => {
   } 
 
   return (
-    <div className={styles.AppStyle}>
-      <Form setLista={setLista} />
-      <Cronometro tempoFinalizado={exercicioFinalizada} tempo={tempo} />
-      <Lista lista={lista} abreItem={selecionaItem} />
+    <div>
+      <Home></Home>
+      <div className={styles.AppStyle}>
+        <Form setLista={setLista} />
+        <Cronometro tempoFinalizado={exercicioFinalizada} tempo={tempo} />
+        <Lista lista={lista} abreItem={selecionaItem} />
+      </div>
+      <Footer></Footer>
     </div>
+
   );
 }
