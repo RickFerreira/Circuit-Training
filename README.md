@@ -30,6 +30,8 @@
 
 ### 💻 Results
 
+<a href="https://circuit-training.vercel.app/">------------Vizualizar como ficou o site------------</a>
+<br>
 
 <img src="https://github.com/RickFerreira/Circuit-Training/blob/main/video.gif" alt="imagem" width="100%">
 
